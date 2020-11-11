@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    font-family: '微软雅黑';
+    /* 去掉下划线 */
+    text-decoration-line: none;
+    /* overflow-x: none; */
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+body {
+    width: 100%;
+    min-width: 1300px;
+    position: absolute;
+    z-index: -1;
+    
+}

@@ -1,0 +1,382 @@
+.content {
+    width: 100%;
+    min-width: 1300px;
+    /* 客户端下载height:1800px;
+    补丁下载height:19100px;
+    大宋映画下载height:800px; */
+    height: 1800px;
+    margin: 0 auto;
+    background: url(../img/content/download/download_bg.jpg) no-repeat,
+                rgb(17,32,48);
+    background-size: 100%;
+}
+/* ======弹框背景====== */
+.shadow{
+    position: absolute;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    bottom:0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background:black;
+    z-index: 100;
+    display: none;
+}
+/* =======点击  大宋映画下载  打开弹框===== */
+.install {
+    position: fixed;
+    width: 1300px;
+    height: 800px;
+    top: 40px;
+    left: 0px;
+    background: url(../img/content/download/tankuang_bg.png) no-repeat;
+    background-size: 106%;
+    display: none;
+    z-index: 101;
+}
+.install .dasongyinghua2{
+    width: 17%;
+    height: 73px;
+    margin: 90px 555px;
+    background: url(../img/content/download/other_bth.png) no-repeat;
+    background-position: 0px -217px;
+    /* background: 1px solid blueviolet; */
+}
+.install .dasongyinghua1{
+    width: 17%;
+    height: 73px;
+    margin: 90px 555px;
+    background: url(../img/content/download/other_bth.png) no-repeat;
+    background-position: -221px -73px;
+}
+.install .normal2 {
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #8a8c8e;
+}
+.install .install_left {
+    width: 28%;
+    height: 240px;
+    float: left;
+    margin: 190px 0 0 240px;
+    background: 1px solid blueviolet;
+}
+.install .install_left img {
+    width: 100%;
+}
+.install .install_right {
+    width: 28%;
+    height: 240px;
+    float: left;
+    margin: 190px 0 0 110px;
+    background: 1px solid blueviolet;
+}
+.install .install_right img {
+    width: 100%;
+}
+/* =======大宋映画下载 推出按钮===== */
+.install_shut {
+    width: 25px;
+    height: 25px;
+    margin: 35px 0px 0px 63px;
+    z-index: 100;
+}
+.install_shut img{
+    width: 100%;
+}
+.install_shut .shut_over {
+    animation: shut_over-run 0.4s linear 1;
+    animation-fill-mode: forwards;
+}
+@keyframes shut_over-run{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(-360deg);
+    }
+}
+.install_shut .shut_out {
+    animation: shut_out-run 0.4s linear 1;
+    animation-fill-mode: forwards;
+}
+@keyframes shut_out-run{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+/* =============main============= */
+.main {
+    width: 45%;
+    /* height: 900px; */
+    margin: 0 0 0 495px;
+    /* border: 1px solid red; */
+}
+/* ==========游戏下载============ */
+.game_download {
+    width: 100%;
+    height: 65px;
+    margin: 0 0 0 0;
+    background: url(../img/content/download/download_other.png) no-repeat;
+    background-position: -105px -80px;  
+}
+/* ==========客户端、补丁、大宋映画下载============ */
+.download_new {
+    width: 40px;
+    margin: 0 0 0 0;
+    position: absolute;
+    z-index: 3;
+}
+.three_download {
+    width: 100%;
+    height: 45px;
+    margin: 35px 0 0 0;
+    z-index: 2;
+    /* border: 1px solid blue; */
+}
+.three_download li {
+    width: 33%;
+    height: 45px;
+    float: left;
+    /* border: 1px solid greenyellow; */
+}
+.three_download .three_download_li {
+    background: url(../img/content/download/download_other.png) no-repeat;
+    background-position: -580px -16px;
+    /* border: 1px solid greenyellow; */
+}
+.three_download li p {
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+}
+.three_download li p span {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+/* ======客户端下载的三个版本=======  */
+.download_one {
+    width: 100%;
+    display: block;
+    /* height: 190px; */
+    /* border: 1px solid greenyellow; */
+}
+.download_one ul {
+    width: 90%;
+    height: 190px;
+    margin: 35px 0px 0 56px;
+}
+.download_one ul li p {
+    width: 50px;
+    height: 48px;
+    margin: 0 0 0 0;
+    background: url(../img/content/download/download_other.png) no-repeat;
+    background-position: -465px -201px;
+}
+.download_one ul .guanfang1 {
+    width: 42%;
+    height: 72px;
+    /* border: 1px solid rgb(231, 32, 6); */
+    background: url(../img/content/download/other_bth.png) no-repeat;
+    background-position: 0 0;
+}
+.download_one ul .guanfang2 {
+    width: 42%;
+    height: 72px;
+    /* border: 1px solid rgb(231, 32, 6); */
+    background: url(../img/content/download/other_bth.png) no-repeat;
+    background-position: 0 -72px;
+}
+.download_one ul .biaozhun1 {
+    width: 42%;
+    height: 72px;
+    margin: 20px 0 0 0;
+    float: left;
+    /* border: 1px solid rgb(231, 32, 6); */
+    background: url(../img/content/download/other_bth.png) no-repeat;
+    background-position: -221px 0;
+}
+.download_one ul .biaozhun2 {
+    width: 42%;
+    height: 72px;
+    margin: 20px 0 0 0;
+    float: left;
+    /* border: 1px solid rgb(231, 32, 6); */
+    background: url(../img/content/download/other_bth.png) no-repeat;
+    background-position: -443px 0;
+}
+.download_one ul .xianyu1 {
+    width: 42%;
+    height: 72px;
+    margin: 20px 0 0 20px;
+    float: left;
+    /* border: 1px solid rgb(231, 32, 6); */
+    background: url(../img/content/download/other_bth.png) no-repeat;
+    background-position: 0 -360px;
+}
+.download_one ul .xianyu2 {
+    width: 42%;
+    height: 72px;
+    margin: 20px 0 0 20px;
+    float: left;
+    /* border: 1px solid rgb(231, 32, 6); */
+    background: url(../img/content/download/other_bth.png) no-repeat;
+    background-position: 0 -288px;
+}
+/* ======客户端下载的文字解说======= */
+.normal {
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(220,223,227);
+    margin: 0 0 15px 0;
+    /* border: 1px solid rgb(231, 32, 6); */
+}
+/* ======客户端下载的安装常见问题======= */
+.h3_answer {
+    width: 45%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    color: white;
+    background: url(../img/content/download/download_other.png) no-repeat;
+    background-position: 0 -377px;
+    padding: 0 0 0 15px;
+    /* border: 1px solid rgb(231, 32, 6); */
+}
+.download_one .answer_title {
+    width: 100%;
+    margin: 0 0 15px 0;
+    border-bottom: 1px solid #67849f;
+}
+.download_one .answer_title span {
+    font-size: 14px;
+    line-height: 20px;
+    color: #c1d7ff;
+}
+.download_one .answer_title a {
+    width: 100px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    float: right;
+    background: url(../img/content/download/download_other.png) no-repeat;
+    background-position: -112px -205px;
+}
+/* =======表格======= */
+ .answer_table {
+    width: 100%;
+    color: #dcdfe3;
+    border: 1px solid #67849f;
+    border-collapse: collapse;
+    margin: 0 0 20px 0;
+}
+ .answer_table thead {
+    background: rgb(36,54,71);
+}
+ .answer_table thead tr td {
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(193,215,255);
+    border: 1px solid #67849f;
+}
+
+ .answer_table tbody tr td {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(193,215,255);
+    border: 1px solid #67849f;
+}
+ .answer_table tbody tr .answer_table_td {
+    height: 65px;
+}
+.answer_table tbody tr td a {
+    font-size: 12px;
+    color: white;
+    background: rgb(81,127,179);
+}
+.answer_table tbody tr td a:hover {
+    background: rgb(93,147,201);
+}
+/* ========表格end========= */
+
+
+.download_one .answer_showCard_nav{
+    width: 100%;
+    height: 150px;
+    margin: 5px 0 0 0;
+    /* border: 1px solid #67849f; */
+}
+.download_one .answer_showCard_nav li {
+    width: 14%;
+    height: 100%;
+    float: left;
+    margin: 0 20px;
+    /* border: 1px solid #bcee09; */
+}
+.download_one .answer_showCard_nav li img {
+    border-radius: 3px;
+}
+.download_one .answer_showCard_nav li p {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(193,215,255);
+}
+.download_one .answer_showCard_nav li a {
+    font-size: 13px;
+    color: rgb(193,215,255);
+    border-bottom: rgb(193,215,255);
+}
+
+/* ======补丁下载======= */
+.download_two {
+    width: 100%;
+    margin: 30px 0 0 0;
+    display: none;
+}
+/* ======大宋映画下载======= */
+.download_three {
+    width: 100%;
+    margin: 30px 0 0 0;
+    display: none;
+}
+.download_three .yinghua1{
+    width: 44%;
+    height: 60px;
+    margin: 30px 140px;
+    background: url(../img/content/download/other_bth.png) no-repeat;
+    background-position: 0px -432px;
+}
+.download_three .yinghua2{
+    width: 44%;
+    height: 60px;
+    margin: 30px 140px;
+    background: url(../img/content/download/other_bth.png) no-repeat;
+    background-position: -257px -432px;
+}
+.download_three .UU1{
+    width: 44%;
+    height: 60px;
+    margin: 30px 140px;
+    background: url(../img/content/download/other_bth2.png) no-repeat;
+    background-position: 0px -317px;
+}
+.download_three .UU2{
+    width: 44%;
+    height: 60px;
+    margin: 30px 140px;
+    background: url(../img/content/download/other_bth2.png) no-repeat;
+    background-position: -270px -317px;
+}

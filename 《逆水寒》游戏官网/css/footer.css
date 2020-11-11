@@ -1,0 +1,52 @@
+.footer {
+    width: 100%;
+    min-width: 1300px;
+    height: 65px;
+    margin: -90px 0 0 0;
+    padding: 65px 0 0 0;
+    background: url(../img/footer/footer_bg.png);
+    background-size: 100%;
+    /* border: 2px solid red; */
+}
+.footer_info {
+    width: 90%;
+    height: 55px;
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+}
+.footer_info ul li {
+    width: 10%;
+    float: left;
+    /* margin: 0 10px 0 0; */
+}
+.footer_info ul li:nth-of-type(3) {
+    width: 15%;
+    float: left;
+    margin: 0 0 0 25px;
+}
+.footer_info ul li:nth-of-type(3)>a {
+    width: 30%;
+    margin: 0 10px;
+}
+.footer_info ul li:last-of-type {
+    width: 55%;
+    height: 55px;
+    float: left;
+    /* border: 1px solid blue; */
+}
+.footer_info ul li:last-of-type>i {
+    font-size: 13px;
+    color: white;
+    font-style: normal;
+}
+.footer_info ul li:last-of-type>i>a {
+    font-size: 13px;
+    color: white;
+}
+.footer_info ul li:last-of-type>i:last-of-type>a:last-of-type {
+    float: right;
+    background: rgb(97,0,0);
+}
+.footer_info ul li:last-of-type>i>a:hover {
+    border-bottom: 1px solid white;
+}
